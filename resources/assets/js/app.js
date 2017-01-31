@@ -13,7 +13,9 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+Vue.component('payment', require('./components/Payment.vue'));
+
+Vue.prototype.$http = axios;
 
 const app = new Vue({
     el: '#app'
