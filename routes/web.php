@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::post('purchases', 'PurchasesController@store');
 
+Route::post('checkout', 'PurchasesController@checkout');
+
