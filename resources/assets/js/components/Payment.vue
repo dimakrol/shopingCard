@@ -1,11 +1,14 @@
 <template>
-    <form action="/purchases" method="POST">
+    <div class="container">
+        <h1>Buy our books!!!</h1>
+        <form action="/purchases" method="POST">
 
-        <input type="hidden" name="stripeToken" v-model="stripeToken">
-        <input type="hidden" name="stripeEmail" v-model="stripeEmail">
+            <input type="hidden" name="stripeToken" v-model="stripeToken">
+            <input type="hidden" name="stripeEmail" v-model="stripeEmail">
 
-        <button type="submit" @click.prevent="buy">Buy My Book</button>
-    </form>
+            <button class="btn btn-default" type="submit" @click.prevent="buy">Buy My Book</button>
+        </form>
+    </div>
 </template>
 
 <script>
