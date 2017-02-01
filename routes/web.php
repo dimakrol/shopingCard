@@ -11,6 +11,8 @@
 |
 */
 
+use App\User;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,4 +20,8 @@ Route::get('/', function () {
 Route::post('purchases', 'PurchasesController@store');
 
 Route::post('checkout', 'PurchasesController@checkout');
+
+Route::get('users', function () {
+    return User::all();
+});
 
